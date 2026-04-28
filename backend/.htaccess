@@ -1,0 +1,6 @@
+Options -Indexes
+Header always set Access-Control-Allow-Origin "http://localhost:5173"
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^notes(/.*)?$ notes.php [QSA,L]
